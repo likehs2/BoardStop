@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.3.final using JasperReports Library version 6.20.3-415f9428cffdb6805c6f85bbb29ebaf18813a2ab  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="produto" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b93773d8-37a3-4e7e-8a38-a71541bccdaa">
+	<property name="com.jaspersoft.studio.data.sql.tables" value="dGJscHJvZHV0byAsMTUsMTUsNWQwYWJkOTMtZTdiMS00MmUxLThkZjUtYjFkMTg1NzhlNTVjOw=="/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="aoba"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT *
+FROM tblproduto]]>
+	</queryString>
+	<field name="idProduto" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="idProduto"/>
+		<property name="com.jaspersoft.studio.field.label" value="idProduto"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tblproduto"/>
+	</field>
+	<field name="descricaoProduto" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="descricaoProduto"/>
+		<property name="com.jaspersoft.studio.field.label" value="descricaoProduto"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tblproduto"/>
+	</field>
+	<field name="unidadeProduto" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="unidadeProduto"/>
+		<property name="com.jaspersoft.studio.field.label" value="unidadeProduto"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tblproduto"/>
+	</field>
+	<field name="codBarrasProduto" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="codBarrasProduto"/>
+		<property name="com.jaspersoft.studio.field.label" value="codBarrasProduto"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tblproduto"/>
+	</field>
+	<field name="saldoMinimoProduto" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="saldoMinimoProduto"/>
+		<property name="com.jaspersoft.studio.field.label" value="saldoMinimoProduto"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tblproduto"/>
+	</field>
+	<field name="saldoProduto" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="saldoProduto"/>
+		<property name="com.jaspersoft.studio.field.label" value="saldoProduto"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tblproduto"/>
+	</field>
+	<field name="marcaProduto" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="marcaProduto"/>
+		<property name="com.jaspersoft.studio.field.label" value="marcaProduto"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tblproduto"/>
+	</field>
+	<field name="categoriaProduto" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="categoriaProduto"/>
+		<property name="com.jaspersoft.studio.field.label" value="categoriaProduto"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tblproduto"/>
+	</field>
+	<field name="subCategoriaProduto" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="subCategoriaProduto"/>
+		<property name="com.jaspersoft.studio.field.label" value="subCategoriaProduto"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tblproduto"/>
+	</field>
+	<field name="dataCadastroProduto" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="dataCadastroProduto"/>
+		<property name="com.jaspersoft.studio.field.label" value="dataCadastroProduto"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tblproduto"/>
+	</field>
+	<field name="usuarioCadastroProduto" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="usuarioCadastroProduto"/>
+		<property name="com.jaspersoft.studio.field.label" value="usuarioCadastroProduto"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tblproduto"/>
+	</field>
+	<field name="dataAlteracaoProduto" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="dataAlteracaoProduto"/>
+		<property name="com.jaspersoft.studio.field.label" value="dataAlteracaoProduto"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tblproduto"/>
+	</field>
+	<field name="usuarioAlteracaoProduto" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="usuarioAlteracaoProduto"/>
+		<property name="com.jaspersoft.studio.field.label" value="usuarioAlteracaoProduto"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tblproduto"/>
+	</field>
+	<field name="ativoProduto" class="java.lang.Boolean">
+		<property name="com.jaspersoft.studio.field.name" value="ativoProduto"/>
+		<property name="com.jaspersoft.studio.field.label" value="ativoProduto"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tblproduto"/>
+	</field>
+	<field name="tipoProduto" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="tipoProduto"/>
+		<property name="com.jaspersoft.studio.field.label" value="tipoProduto"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tblproduto"/>
+	</field>
+	<field name="custoPraticadoProduto" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="custoPraticadoProduto"/>
+		<property name="com.jaspersoft.studio.field.label" value="custoPraticadoProduto"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tblproduto"/>
+	</field>
+	<field name="margemProduto" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="margemProduto"/>
+		<property name="com.jaspersoft.studio.field.label" value="margemProduto"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tblproduto"/>
+	</field>
+	<field name="vendaVendaProduto" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="vendaVendaProduto"/>
+		<property name="com.jaspersoft.studio.field.label" value="vendaVendaProduto"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tblproduto"/>
+	</field>
+	<field name="fabricante" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="fabricante"/>
+		<property name="com.jaspersoft.studio.field.label" value="fabricante"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tblproduto"/>
+	</field>
+	<group name="idProduto">
+		<groupExpression><![CDATA[$F{idProduto}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="79" splitType="Stretch">
+			<textField>
+				<reportElement x="5" y="49" width="100" height="30" uuid="3772cd54-2f64-4b69-9a14-7cb8dd1baccf"/>
+				<textFieldExpression><![CDATA["Boto"]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="5" y="0" width="100" height="30" uuid="44395282-53ba-4be3-989c-8b3b496d82c4"/>
+				<textFieldExpression><![CDATA[$F{descricaoProduto}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

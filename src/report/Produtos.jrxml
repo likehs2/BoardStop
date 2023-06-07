@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Produtos" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b1a4e8fc-e34f-44cc-a3a1-af4f5f72a6bc">
+	<property name="com.jaspersoft.studio.data.sql.tables">
+		<![CDATA[dGJscHJvZHV0byAsMTI1LDE1LGYwZmM1OWUzLTE3MGEtNGM5ZC1hYmJkLTEwYzgxNTlhNWM4Mjt0
+YmxtYXJjYSAsMjMwLDE1LDI5MGU4NTNhLWY0NGYtNDY4Zi04NmJhLTdhNzIyNDBlNzdmNTt0Ymxj
+YXRlZ29yaWEgLDE1LDE1LDBiMDAxM2I2LTM0MjAtNGY5NS04MjY5LTE2OTg5ODllY2YzYjs=]]>
+	</property>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="teste"/>
+	<queryString language="SQL">
+		<![CDATA[select 
+	p.descricaoProduto,
+    m.nomeMarca,
+    c.nomeCategoria
+from tblproduto p
+left join tblmarca m on (m.idMarca=p.marcaProduto)
+left join tblcategoria c on (c.idCategoria=p.categoriaProduto)]]>
+	</queryString>
+	<field name="descricaoProduto" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="descricaoProduto"/>
+		<property name="com.jaspersoft.studio.field.label" value="descricaoProduto"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tblproduto"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nomeMarca" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nomeMarca"/>
+		<property name="com.jaspersoft.studio.field.label" value="nomeMarca"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tblmarca"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nomeCategoria" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nomeCategoria"/>
+		<property name="com.jaspersoft.studio.field.label" value="nomeCategoria"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tblcategoria"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="descricaoProduto1" class="java.lang.Integer" resetType="Column" calculation="Count">
+		<variableExpression><![CDATA[$F{descricaoProduto}]]></variableExpression>
+	</variable>
+	<variable name="nomeMarca1" class="java.lang.Integer" resetType="Column" calculation="DistinctCount">
+		<variableExpression><![CDATA[$F{nomeMarca}]]></variableExpression>
+	</variable>
+	<variable name="nomeCategoria1" class="java.lang.Integer" resetType="Column" calculation="DistinctCount">
+		<variableExpression><![CDATA[$F{nomeCategoria}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="227" y="20" width="100" height="30" uuid="6c993ad5-0a96-4086-8dfe-eaf9a30cf6a4"/>
+				<text><![CDATA[Relatório de Produtos]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="53" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="7" width="100" height="30" uuid="ddc37a37-c0a1-46da-aaf8-a6ba09b184fa"/>
+				<text><![CDATA[Produtos]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="7" width="100" height="30" uuid="f56702e3-f5f4-4a4f-ba53-c2d5e2758a93"/>
+				<text><![CDATA[Marca]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="410" y="8" width="100" height="30" uuid="70ecfaf7-0de8-4617-be01-88c5887e11fb"/>
+				<text><![CDATA[Categoria]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="40" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="180" height="30" uuid="229fff4e-6f39-4463-b6de-f3fb620043a1"/>
+				<textFieldExpression><![CDATA[$F{descricaoProduto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="0" width="170" height="30" uuid="82f573e3-588f-469a-8db3-1746d64f73fc"/>
+				<textFieldExpression><![CDATA[$F{nomeMarca}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="0" width="140" height="30" uuid="cb852c84-ca97-4aae-acc2-ece507785354"/>
+				<textFieldExpression><![CDATA[$F{nomeCategoria}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

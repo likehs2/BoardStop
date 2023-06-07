@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="categoria.jasper" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e7f2547d-e778-46ba-8679-617cc1dee50d">
+	<property name="com.jaspersoft.studio.data.sql.tables" value="dGJsY2F0ZWdvcmlhICwxNSwxNSxjM2I0ZGIyMi1mNDBmLTQ3MmQtOTIzMi1jNzlmYTY4OTk3NGQ7"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="teste"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT nomeCategoria
+FROM tblcategoria]]>
+	</queryString>
+	<field name="nomeCategoria" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nomeCategoria"/>
+		<property name="com.jaspersoft.studio.field.label" value="nomeCategoria"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tblcategoria"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="230" y="20" width="100" height="30" uuid="d262816c-a975-45de-983b-ec3cb8538e9f"/>
+				<text><![CDATA[Relatório Categoria]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="10" width="100" height="30" uuid="f7085daf-0ad8-4ccf-b118-4363810f3db0"/>
+				<text><![CDATA[Categorias]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="38" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="100" height="30" uuid="db6dbf66-bf65-4789-893b-6b624c828f40">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="35d2d180-3c7b-45f2-9f48-ed37e8b4cc73"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{nomeCategoria}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

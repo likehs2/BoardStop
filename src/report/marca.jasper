@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="marca" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0936d080-8fd3-4180-9dcf-d8e89cbd9071">
+	<property name="com.jaspersoft.studio.data.sql.tables" value="dGJsbWFyY2EgLDE1LDE1LGU1MTkwMDRmLTg2YjgtNGFjNS05MzQ5LTMyNDViN2E4Y2Q1ZTs="/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="teste"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT nomeMarca
+FROM tblmarca]]>
+	</queryString>
+	<field name="nomeMarca" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nomeMarca"/>
+		<property name="com.jaspersoft.studio.field.label" value="nomeMarca"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tblmarca"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="227" y="20" width="100" height="30" uuid="984a9e6a-2e7a-4afb-8970-6322acd396e8"/>
+				<text><![CDATA[Relatório Marcas]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="57" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="20" width="53" height="30" uuid="952221a6-d744-4d4b-a2bb-549f11fdeff5"/>
+				<text><![CDATA[Marcas]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="56" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="20" width="100" height="30" uuid="41497d1b-4509-4622-841d-9592bdb4429b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ae44c1ac-2c06-4d0e-bb35-f52d1ece3af5"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{nomeMarca}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
