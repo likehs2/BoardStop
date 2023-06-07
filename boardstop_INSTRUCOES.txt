@@ -1,0 +1,33 @@
+Professor fiz identico a sua classe da aula, por favor só preciso de 60 pra passar
+
+1º passo
+
+Acessar o arquivo Util - > conectaBanco
+
+alterar para suas configurações de banco
+
+servidormysql = nome da sua maquina ou servidor onde roda o banco
+bancodadosmysql = nome do banco de dados
+usuariomysql = usuario no mySQL
+senhamysql = senha do seu usuario no mySQL
+
+
+Acessar o arquivo Util - > ConnectionFactory
+
+alterar para suas configurações de banco também
+
+2º passo
+
+Rodar o script no mySQL que esta na pasta raiz do projeto 'scriptSistema.sql' para criar as tabelas
+ja está criando o usuário para acessar
+
+3º passo
+
+rodar o projeto e acessar com usuário setado no script
+
+usuario: master
+senha: 123
+
+4º passo 
+
+acessar os reports e alterar a conexao de banco deles
